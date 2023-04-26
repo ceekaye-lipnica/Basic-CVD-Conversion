@@ -362,7 +362,32 @@ color: #ffa700;
 
 .footer{
   padding: 5rem;
-  /* background: #2b2b2b; */
+  background: #2b2b2b;
+}
+
+.footer .footer__wrapper{
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+.footer .footer__icons{
+  color: #f5f5f5;
+}
+
+.footer .footer__icons i{
+  font-size: 25px;
+  margin: 1rem;
+}
+
+.footer .footer__text{
+  color: #f5f5f5;
+  font-size: 2rem;
+}
+
+.footer .footer__copyright{ 
+  color: #f5f5f5;
+  font-size: 2rem;
 }
 
 
