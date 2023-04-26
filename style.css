@@ -337,7 +337,6 @@ color: #ffa700;
 
 .hm-contactpage__wrapper{
   display: flex;
-  align-items: center;
   text-align: center;
   justify-content: center;
 }
@@ -348,7 +347,6 @@ color: #ffa700;
 }
 
 .hm-contactpage .hm-contactpage__text p{
- font-size: 3rem;
  margin-top: 1rem;
 }
 
@@ -380,10 +378,13 @@ color: #ffa700;
   margin: 1rem;
 }
 
+.footer .footer__icons ul{
+  display: flex;
+}
+
 .footer .footer__icons a{
   color: #f5f5f5;
 }
-
 
 .footer .footer__icons a:hover{
   color:#ffa700;
@@ -399,9 +400,118 @@ color: #ffa700;
   font-size: 2rem;
 }
 
+/*------------ABOUT PAGE - BANNER-------------*/
+
+.aboutpage-banner{
+  padding: 5rem;
+}
+
+.aboutpage-banner .aboutpage-banner__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutpage-banner .aboutpage-banner__text{
+  max-width: 50rem;
+
+}
+
+.aboutpage-banner .aboutpage-banner__text h2{
+  color: #ffa700;
+  font-size: 8rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.aboutpage-banner .aboutpage-banner__text p{
+  text-align: justify;
+}
+
+.aboutpage-banner .aboutpage-banner__text ul{
+  display: flex;
+  margin-top: 5rem;
+}
+
+.aboutpage-banner .aboutpage-banner__text a{
+  margin: 0.8rem;
+  color:#ffa700;
+  font-size: 25px;
+}
+
+.aboutpage-banner .aboutpage-banner__text a:hover{
+  color: #2b2b2b;
+}
+
+.aboutpage-banner .angledown-icon{
+  display: flex;
+  justify-content: center;
+}
+
+.aboutpage-banner .angledown-icon{
+  color: #ffa700;
+  font-size: 25px;
+}
+
+.aboutpage-banner .angledown-icon:hover{
+  color: #2b2b2b;
+ 
+}
+
+/*------------ABOUT PAGE - RECENT PROJECTS-------------*/
+
+.projects{
+  padding: 5rem 0;
+  background: #2b2b2b;
+}
+
+.projects .projects__title h2{
+  color: #ffa700;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.projects .projects__title p{
+  color: #f5f5f5;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+
+.projects .projects__cards__text{
+  padding: 3rem;
+}
+
+.projects .projects__cards__text h4{
+  color: #ffa700;
+  font-size: 1.5rem;
+  font-weight: 600;   
+}
+
+.projects .projects__cards__text p{
+  color: #2b2b2b;
+  text-align: justify;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.projects .projects__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+.projects .projects__cards{
+  background: #f5f5f5;
+  border-radius: 3rem;
+}
+
+.projects .projects__cards img{
+width: 100%;
+}
 
 
- /*------------REPEATABLE PATTERNS-------------*/
+
+/*------------REPEATABLE PATTERNS-------------*/
 
 .btn{
   display: inline-block;
