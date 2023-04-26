@@ -380,6 +380,15 @@ color: #ffa700;
   margin: 1rem;
 }
 
+.footer .footer__icons a{
+  color: #f5f5f5;
+}
+
+
+.footer .footer__icons a:hover{
+  color:#ffa700;
+}
+
 .footer .footer__text{
   color: #f5f5f5;
   font-size: 2rem;
@@ -389,14 +398,6 @@ color: #ffa700;
   color: #f5f5f5;
   font-size: 2rem;
 }
-
-
-
-
-
-
-
-
 
 
 
