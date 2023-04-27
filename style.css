@@ -125,6 +125,9 @@
   /*------------HEADER-------------*/
   .header{
     background: #2b2b2b;
+    position: relative;
+    position: fixed;
+    width: 100%;
   }
 
   .header .header__wrapper{
@@ -170,9 +173,90 @@
  
   }
 
-  /*------------BANNER-------------*/
+  .toggle__menu{
+    display: none;
+  }
+
+  /* css ng burger button */
+  .toggle__menu span{
+    width: 3rem;
+    height: .3rem;
+    background-color: #ffa700;
+    display: block;
+    margin-top: .5rem;
+    border-radius: 5rem;
+    transition: .5s ease;
+  }
+
+  
+/*----------MEDIA QUERY---------*/
+@media screen and (max-width: 500px){
+
+  .toggle__menu{
+    display: block;
+  }
+
+  /* animation ng toggle menu */
+  .toggle__menu.open span:first-child{
+    transform: translate(0, 10px) rotate(225deg);
+    transition: .5s ease;
+  }
+
+  .toggle__menu.open span:nth-child(2){
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+  .toggle__menu.open span:last-child{
+    transform: translate(0, -6px) rotate(-225deg);
+    transition: .5s ease;
+  }
+
+
+
+
+  .header .header__nav{
+    background: #2b2b2b;
+    position: absolute;
+    top: 10.3rem;
+    right: -100rem;
+    width: 100%;
+    height: 100vh;
+    transition: .5s ease;
+  }
+
+  .header .header__nav.open{
+    right: 0;
+    transition: .5s ease;
+  }
+
+  .header .header__nav ul{
+    display: block;
+    text-align: center;
+  }
+
+  .header .header__nav  ul li{
+    padding: 3rem 0;
+    margin-left: 0;
+  }
+
+  .header .header__nav  ul li:hover{
+    background: #333333;
+    cursor: pointer;
+  }
+
+  .header .header__nav  ul li a{
+    font-size: 3rem;
+  }
+
+
+}
+
+
+/*------------BANNER-------------*/
 .banner{
-  padding: 5rem 0;
+  padding-top: 13rem;
+  padding-bottom: 5rem;
 }
 
   .banner .banner__wrapper{
@@ -336,7 +420,7 @@ color: #ffa700;
 }
 
 .hm-contactpage__wrapper{
-  display: flex;
+  display: block;
   text-align: center;
   justify-content: center;
 }
@@ -374,8 +458,8 @@ color: #ffa700;
 }
 
 .footer .footer__icons i{
-  font-size: 25px;
-  margin: 1rem;
+  font-size: 2rem;
+  margin: 1.5rem;
 }
 
 .footer .footer__icons ul{
@@ -392,12 +476,12 @@ color: #ffa700;
 
 .footer .footer__text{
   color: #f5f5f5;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .footer .footer__copyright{ 
   color: #f5f5f5;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /*------------ABOUT PAGE - BANNER-------------*/
@@ -413,7 +497,7 @@ color: #ffa700;
 }
 
 .aboutpage-banner .aboutpage-banner__text{
-  max-width: 50rem;
+  max-width: 70rem;
 
 }
 
@@ -491,12 +575,13 @@ color: #ffa700;
   color: #2b2b2b;
   text-align: justify;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  line-height: 2;
 }
 
 .projects .projects__wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
   grid-gap: 5rem;
 }
 
@@ -507,6 +592,185 @@ color: #ffa700;
 
 .projects .projects__cards img{
 width: 100%;
+}
+
+
+/*------------SERVICES PAGE - BANNER 1-------------*/
+
+.services1__banner{
+  padding: 5rem 0;
+  background: #f5f5f5;
+}
+
+.services1__banner .services1__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services1__banner .services1__banner__text{
+  max-width: 60rem;
+}
+
+.services1__banner .services1__banner__text h2{
+  color: #ffa700;
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 8.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.services1__banner .services1__banner__text p{
+  text-align: justify;
+  line-height: 2;
+}
+
+.services1__banner .services1__banner__text h3{
+  color: #ffa700;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.services1__banner .services1__banner__text h5{
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.services1__banner .angledown-icon{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+
+}
+
+.services1__banner .angledown-icon{
+  color: #ffa700;
+  font-size: 30px;
+}
+
+.services1__banner .angledown-icon:hover{
+  color: #2b2b2b;
+}
+
+/*------------SERVICES PAGE - BANNER 2-------------*/
+
+
+.services2__banner{
+  padding: 5rem 0;
+  background: #2b2b2b;
+}
+
+.services2__banner .services2__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services2__banner .services2__banner__text{
+  max-width: 60rem;
+}
+
+.services2__banner .services2__banner__text h2{
+  color: #ffa700;
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 8.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.services2__banner .services2__banner__text p{
+  color: #f5f5f5;
+  text-align: justify;
+  line-height: 2;
+}
+
+.services2__banner .services2__banner__text h3{
+  color: #ffa700;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.services2__banner .services2__banner__text h5{
+  color: #f5f5f5;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.services2__banner .angledown-icon{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+
+}
+
+.services2__banner .angledown-icon{
+  color: #ffa700;
+  font-size: 30px;
+}
+
+.services2__banner .angledown-icon:hover{
+  color: #2b2b2b;
+}
+
+/*------------SERVICES PAGE - BANNER 3-------------*/
+
+
+.services3__banner{
+  padding: 5rem 0;
+  background: #f5f5f5;
+}
+
+.services3__banner .services3__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services3__banner .services3__banner__text{
+  max-width: 60rem;
+}
+
+.services3__banner .services3__banner__text h2{
+  color: #ffa700;
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 8.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.services3__banner .services3__banner__text p{
+  text-align: justify;
+  line-height: 2;
+}
+
+.services3__banner .services3__banner__text h3{
+  color: #ffa700;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.services3__banner .services3__banner__text h5{
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.services3__banner .angledown-icon{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+
+}
+
+.services3__banner .angledown-icon{
+  color: #ffa700;
+  font-size: 30px;
+}
+
+.services3__banner .angledown-icon:hover{
+  color: #2b2b2b;
 }
 
 
