@@ -412,7 +412,6 @@
  
  .hm-trends__title{
   margin-bottom: 5rem;
- 
  } 
 
  .hm-trends__title h2{
@@ -481,10 +480,7 @@ color: #ffa700;
     font-size: 3rem;
   
   }
-
-
 }
-
 
 /*------------HM-CONTACT PAGE-------------*/
 
@@ -576,7 +572,6 @@ color: #ffa700;
     font-size: 1.2rem;
     margin-top: 1.5rem;
   }
-
 }
 
 /*------------ABOUT PAGE - BANNER-------------*/
@@ -641,7 +636,6 @@ color: #ffa700;
 
 .aboutpage-banner .angledown-icon:hover{
   color: #2b2b2b;
- 
 }
 
 @media screen and (max-width: 500px){
@@ -680,7 +674,6 @@ color: #ffa700;
   }
 
 }
-
 
 /*------------ABOUT PAGE - RECENT PROJECTS-------------*/
 
@@ -760,87 +753,39 @@ width: 100%;
     margin-right: 2rem;
   }
 
-
-
 }
 
-/*------------SERVICES PAGE - BANNER 1-------------*/
+/*------------SERVICES PAGE - BANNER -------------*/
 
-.services1__banner{
-  padding: 5rem 0;
-  background: #f5f5f5;
+.services__banner{
+  padding-top: 13rem;
+  padding-bottom: .5rem;
 }
 
-.services1__banner .services1__wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.services1__banner .services1__banner__text{
-  max-width: 60rem;
-}
-
-.services1__banner .services1__banner__text h2{
-  color: #ffa700;
-  font-size: 8rem;
-  font-weight: 600;
-  line-height: 8.5rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.services1__banner .services1__banner__text p{
-  text-align: justify;
-  line-height: 2;
-}
-
-.services1__banner .services1__banner__text h3{
-  color: #ffa700;
-  font-size: 3.5rem;
-  font-weight: 600;
-}
-
-.services1__banner .services1__banner__text h5{
-  font-size: 1.3rem;
-  font-style: italic;
-}
-
-.services1__banner .angledown-icon{
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-
-}
-
-.services1__banner .angledown-icon{
-  color: #ffa700;
-  font-size: 30px;
-}
-
-.services1__banner .angledown-icon:hover{
-  color: #2b2b2b;
-}
-
-/* ------------SERVICES PAGE - BANNER 2------------- */
-
-
-/* .services2__banner{
-  padding: 5rem 0;
+.services__banner .services__items:nth-child(2){
   background: #2b2b2b;
+  color: #f5f5f5;
+  padding-bottom: .5rem;
 }
 
-.services2__banner .services2__wrapper{
+.services__banner .services__content{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  /* margin-left: 70rem;
+  margin-right: 70rem; */
 }
 
-.services2__banner .services2__banner__text{
+.services__banner .services__text{
   max-width: 60rem;
 }
 
-.services2__banner .services2__banner__text h2{
+.services__banner .services__text h2{
   color: #ffa700;
   font-size: 8rem;
   font-weight: 600;
@@ -849,99 +794,32 @@ width: 100%;
   margin-bottom: 5rem;
 }
 
-.services2__banner .services2__banner__text p{
-  color: #f5f5f5;
+.services__banner .services__text p{
   text-align: justify;
   line-height: 2;
 }
 
-.services2__banner .services2__banner__text h3{
+.services__banner .services__text h3{
   color: #ffa700;
   font-size: 3.5rem;
   font-weight: 600;
 }
 
-.services2__banner .services2__banner__text h5{
-  color: #f5f5f5;
+.services__banner .services__text h5{
   font-size: 1.3rem;
   font-style: italic;
 }
 
-.services2__banner .angledown-icon{
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-
+.services__banner  .angledown-icon{
+display: flex;
+justify-content: center;
+margin: 5rem;
 }
 
-.services2__banner .angledown-icon{
+.services__banner  .angledown-icon a{
   color: #ffa700;
   font-size: 30px;
 }
-
-.services2__banner .angledown-icon:hover{
-  color: #2b2b2b;
-} */
-
-/*------------SERVICES PAGE - BANNER 3-------------*/
-
-
-/* .services3__banner{
-  padding: 5rem 0;
-  background: #f5f5f5;
-}
-
-.services3__banner .services3__wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.services3__banner .services3__banner__text{
-  max-width: 60rem;
-}
-
-.services3__banner .services3__banner__text h2{
-  color: #ffa700;
-  font-size: 8rem;
-  font-weight: 600;
-  line-height: 8.5rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.services3__banner .services3__banner__text p{
-  text-align: justify;
-  line-height: 2;
-}
-
-.services3__banner .services3__banner__text h3{
-  color: #ffa700;
-  font-size: 3.5rem;
-  font-weight: 600;
-}
-
-.services3__banner .services3__banner__text h5{
-  font-size: 1.3rem;
-  font-style: italic;
-}
-
-.services3__banner .angledown-icon{
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-
-}
-
-.services3__banner .angledown-icon{
-  color: #ffa700;
-  font-size: 30px;
-}
-
-.services3__banner .angledown-icon:hover{
-  color: #2b2b2b;
-} */
-
 
 /*------------UPDATES PAGE - BANNER 1-------------*/
 
@@ -1014,7 +892,6 @@ width: 100%;
   line-height: 2;
   text-align: justify;
 }
-
 
 
 /*------------REPEATABLE PATTERNS-------------*/
