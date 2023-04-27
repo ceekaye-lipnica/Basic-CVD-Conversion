@@ -212,9 +212,6 @@
     transition: .5s ease;
   }
 
-
-
-
   .header .header__nav{
     background: #2b2b2b;
     position: absolute;
@@ -272,7 +269,7 @@
   .banner .banner__text h1{
     color: #ffa700;
     font-size: 8rem;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 1.15;
   }
 
@@ -280,6 +277,32 @@
    margin: 3rem 0;
    color: #2b2b2b;
   }
+
+  @media screen and (max-width: 500px) {
+    .banner .banner__wrapper{
+      flex-direction: column-reverse;
+    }
+
+    .banner .banner__text{
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    .banner .banner__text h1{
+      font-size: 3rem;
+    }
+
+    .banner .banner__text p{
+      text-align: justify;
+    }
+
+    .banner img{
+      width: 25rem;
+    }
+
+  }
+
+
 
 /*------------HM-SERVICES-------------*/
 
@@ -321,6 +344,22 @@
   border: 1px solid #f5f5f5;
 }
 
+@media screen and (max-width: 500px){
+  .hm-services .hm-services__wrapper{
+    flex-direction: column;
+  }
+
+  .hm-services .hm-services__item{
+    margin: 0 auto;
+  }
+
+  .hm-services .hm-services__item:nth-child(2){
+    margin: 10rem auto;
+  }
+
+}
+
+
  /*------------HM-ABOUTPAGE-------------*/
 
 .hm-aboutpage{
@@ -348,6 +387,22 @@
  margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 500px){
+  .hm-aboutpage .hm-aboutpage__wrapper{
+    flex-direction: column;
+  }
+
+  .hm-aboutpage img{
+    margin-bottom: 5rem;
+  }
+
+  .hm-aboutpage .hm-aboutpage__text h2{
+    text-align: center;
+  }
+
+ 
+}
+
  /*------------HM-TRENDS-------------*/
 
  .hm-trends{
@@ -370,11 +425,6 @@
   color: #f5f5f5;
  }
 
- /* .hm-trends .hm-trends__wrapper{
-  display: flex;
-  justify-content: space-between;
- } */
-
  .hm-trends .hm-trends__wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -385,7 +435,6 @@
 .hm-trends .hm-trends__card{
   background: #f5f5f5;
   border-radius: 3rem;
-  /* max-width: 40rem; */
 }
 
 .hm-trends .hm-trends__card img{
@@ -410,6 +459,31 @@ margin-bottom: 5rem;
 color: #ffa700;
 }
 
+@media screen and (max-width: 500px){
+
+  .hm-trends{
+    padding: 2rem 0;
+  }
+
+  .hm-trends .hm-trends__wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  }
+
+  .hm-trends .hm-trends__title{
+    text-align: center;
+  
+  }
+
+  .hm-trends .hm-trends__title h2{
+    font-size: 3rem;
+  
+  }
+
+
+}
 
 
 /*------------HM-CONTACT PAGE-------------*/
@@ -484,10 +558,32 @@ color: #ffa700;
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 500px){
+
+  .footer{
+    padding: .2rem;
+  }
+
+  .footer .footer__wrapper{
+    flex-direction: column;
+  }
+
+  .footer .footer__text{
+    font-size: 1.2rem;
+  }
+
+  .footer .footer__copyright{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+}
+
 /*------------ABOUT PAGE - BANNER-------------*/
 
 .aboutpage-banner{
-  padding: 5rem;
+  padding-top: 13rem;
+  padding-bottom: 5rem;
 }
 
 .aboutpage-banner .aboutpage-banner__wrapper{
@@ -497,7 +593,7 @@ color: #ffa700;
 }
 
 .aboutpage-banner .aboutpage-banner__text{
-  max-width: 70rem;
+  max-width: 55rem;
 
 }
 
@@ -527,9 +623,15 @@ color: #ffa700;
   color: #2b2b2b;
 }
 
+.aboutpage-banner img{
+ width: 50%;
+ height: 100%;
+}
+
 .aboutpage-banner .angledown-icon{
   display: flex;
   justify-content: center;
+  margin-top: 5rem;
 }
 
 .aboutpage-banner .angledown-icon{
@@ -541,6 +643,44 @@ color: #ffa700;
   color: #2b2b2b;
  
 }
+
+@media screen and (max-width: 500px){
+
+  .aboutpage-banner{
+    padding-bottom: 2rem;
+  }
+
+  .aboutpage-banner .aboutpage-banner__wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .aboutpage-banner .aboutpage-banner__text{
+    text-align: center;
+  }
+  .aboutpage-banner .aboutpage-banner__text h2{
+    font-size: 3rem;
+  }
+  .aboutpage-banner .aboutpage-banner__text h4{
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .aboutpage-banner .aboutpage-banner__text p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .aboutpage-banner .aboutpage-banner__text ul{
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .aboutpage-banner .angledown-icon{
+    margin-top: 3rem;
+  }
+
+}
+
 
 /*------------ABOUT PAGE - RECENT PROJECTS-------------*/
 
@@ -594,6 +734,35 @@ color: #ffa700;
 width: 100%;
 }
 
+@media screen and (max-width: 500px){
+
+  .projects{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+
+  .projects .projects__title h2{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .projects .projects__title p{
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .projects .projects__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+
+
+}
 
 /*------------SERVICES PAGE - BANNER 1-------------*/
 
@@ -653,10 +822,10 @@ width: 100%;
   color: #2b2b2b;
 }
 
-/*------------SERVICES PAGE - BANNER 2-------------*/
+/* ------------SERVICES PAGE - BANNER 2------------- */
 
 
-.services2__banner{
+/* .services2__banner{
   padding: 5rem 0;
   background: #2b2b2b;
 }
@@ -712,12 +881,12 @@ width: 100%;
 
 .services2__banner .angledown-icon:hover{
   color: #2b2b2b;
-}
+} */
 
 /*------------SERVICES PAGE - BANNER 3-------------*/
 
 
-.services3__banner{
+/* .services3__banner{
   padding: 5rem 0;
   background: #f5f5f5;
 }
@@ -771,6 +940,79 @@ width: 100%;
 
 .services3__banner .angledown-icon:hover{
   color: #2b2b2b;
+} */
+
+
+/*------------UPDATES PAGE - BANNER 1-------------*/
+
+.updates__banner{
+  padding-top: 13rem;
+  padding-bottom: 5rem;
+}
+
+.updates__banner .updates__title h2{
+  color: #ffa700;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.updates__banner .updates__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.updates__banner .updates__wrapper h3{
+  color: #ffa700;
+  font-size: 3rem;
+  font-weight: 600;
+
+}
+
+.updates__banner .updates__details{
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.updates__banner .details-icons{
+  margin-right: 8rem;
+}
+
+.updates__banner .updates__details p{
+  display: inline;
+  margin-left: 1rem;
+}
+
+.updates__banner .categories__wrapper{
+  display: flex;
+  line-height: 3;
+}
+
+.updates__banner .description{
+  margin-left: 10rem;
+  font-weight: 800;
+}
+
+.updates__banner .number{
+  margin-left: 10rem;
+  font-weight: 800;
+}
+
+.updates__banner .description h3{
+  color: #ffa700;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.updates__banner .explanation h3{
+  color: #ffa700;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.updates__banner .explanation p{
+  line-height: 2;
+  text-align: justify;
 }
 
 
