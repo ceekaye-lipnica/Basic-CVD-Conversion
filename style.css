@@ -212,6 +212,10 @@
     transition: .5s ease;
   }
 
+  .toggle__menu:hover{
+    cursor: pointer;
+  }
+
   .header .header__nav{
     background: #2b2b2b;
     position: absolute;
@@ -286,6 +290,8 @@
     .banner .banner__text{
       text-align: center;
       margin-top: 5rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
 
     .banner .banner__text h1{
@@ -301,7 +307,6 @@
     }
 
   }
-
 
 
 /*------------HM-SERVICES-------------*/
@@ -398,9 +403,9 @@
 
   .hm-aboutpage .hm-aboutpage__text h2{
     text-align: center;
+    font-size: 3rem;
   }
 
- 
 }
 
  /*------------HM-TRENDS-------------*/
@@ -634,10 +639,6 @@ color: #ffa700;
   font-size: 25px;
 }
 
-.aboutpage-banner .angledown-icon:hover{
-  color: #2b2b2b;
-}
-
 @media screen and (max-width: 500px){
 
   .aboutpage-banner{
@@ -772,13 +773,10 @@ width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   max-width: 140rem;
   margin: 0 auto;
   padding: 1.5rem;
 
-  /* margin-left: 70rem;
-  margin-right: 70rem; */
 }
 
 .services__banner .services__text{
@@ -810,7 +808,11 @@ width: 100%;
   font-style: italic;
 }
 
-.services__banner  .angledown-icon{
+.services__banner .price{
+  margin-top: 2rem;
+}
+
+.services__banner .angledown-icon{
 display: flex;
 justify-content: center;
 margin: 5rem;
@@ -821,7 +823,56 @@ margin: 5rem;
   font-size: 30px;
 }
 
-/*------------UPDATES PAGE - BANNER 1-------------*/
+@media screen and (max-width: 500px){
+  .services__banner{
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+  }
+  
+  
+.services__banner .services__content{
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+}
+
+.services__banner .services__items img{
+  width: 25rem;
+}
+
+.services__banner .services__items:nth-child(2) img{
+  padding-top: 5rem;
+  order: 1;
+}
+
+.services__banner .services__items:nth-child(3) img{
+  padding-top: 5rem;
+}
+
+.services__banner .services__text h2{
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.services__banner .price{
+  text-align: center;
+  
+} 
+.services__banner .price p{
+  text-align: center;
+  
+}
+
+.services__banner .angledown-icon{
+  margin-bottom: 3rem;
+}
+  
+}
+
+/*------------UPDATES PAGE - BANNER -------------*/
 
 .updates__banner{
   padding-top: 13rem;
@@ -834,16 +885,68 @@ margin: 5rem;
   font-weight: 600;
 }
 
-.updates__banner .updates__wrapper{
-  display: flex;
-  justify-content: space-between;
+.updates__banner .updates__title{
+  margin-bottom: 7rem;
 }
 
-.updates__banner .updates__wrapper h3{
+.updates__banner .updates__wrapper{
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+}
+
+.updates__banner .wrapper__left{
+  max-width: 80rem;
+}
+
+.updates__banner .categories{
+  padding-left: 20rem;
+}
+
+.updates__banner .contents:nth-child(2){
+  margin-top: 5rem;
+  border-top: 2px solid #d3d3d3;
+}
+
+.updates__banner .recentpost{
+  margin-top: 5rem;
+  border-top: 2px solid #d3d3d3;
+}
+
+.updates__banner .tags{
+  margin-top: 5rem;
+  border-top: 2px solid #d3d3d3;
+}
+
+.updates__banner .contents:nth-child(2) img{
+  margin-top: 5rem;
+}
+
+.updates__banner .wrapper__left img{
+  width: 100%;
+}
+
+.updates__banner .wrapper__left h3{
   color: #ffa700;
   font-size: 3rem;
   font-weight: 600;
+}
 
+.updates__banner .wrapper__left p{
+  text-align: justify;
+  line-height: 2;
+  margin: 2.5rem 0;
+}
+
+.updates__banner .wrapper__left h4{
+  color: #ffa700;
+  font-size: 1.6rem;
+}
+
+.updates__banner .wrapper__right h3{
+  color: #ffa700;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .updates__banner .updates__details{
@@ -858,7 +961,8 @@ margin: 5rem;
 
 .updates__banner .updates__details p{
   display: inline;
-  margin-left: 1rem;
+  margin-left: .8rem;
+  font-weight: 600;
 }
 
 .updates__banner .categories__wrapper{
@@ -876,22 +980,90 @@ margin: 5rem;
   font-weight: 800;
 }
 
-.updates__banner .description h3{
-  color: #ffa700;
-  font-size: 3rem;
+.updates__banner table{
+ margin-top: 3rem;
+}
+
+.updates__banner td{
+  font-weight: 600;
+  height: 5rem;
+}
+
+.updates__banner .td-title{
+  width: 25rem;
+}
+
+.updates__banner .box{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.updates__banner .box-text{
+  margin-left: 4rem;
+}
+
+.updates__banner .box-text p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3.9rem;
+}
+
+.updates__banner .box-text h5{
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
-.updates__banner .explanation h3{
-  color: #ffa700;
-  font-size: 3rem;
-  font-weight: 600;
+.updates__banner .recentpost__title{
+  margin-top: 7rem;
+}
+
+.updates__banner .tags__title{
+  margin-top: 10rem;
   margin-bottom: 2rem;
 }
-.updates__banner .explanation p{
-  line-height: 2;
-  text-align: justify;
+
+.updates__banner .tags a{
+  margin: 1rem 1rem;
+  text-transform: uppercase;
 }
+
+.updates__banner .tags p{
+  margin: 0 3rem;
+}
+
+@media screen and (max-width: 500px) {
+
+  .updates__banner .updates__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .updates__banner .updates__title{
+    text-align: center;
+  }
+
+  .updates__banner .updates__title h2{
+    font-size: 3rem;
+  }
+
+  .updates__banner .details-icons{
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .updates__banner .updates__details{
+    justify-content: center;
+  }
+  
+  .updates__banner .updates__details p{
+    display: inline;
+    margin-left: .5rem;
+    font-weight: 600;
+  }
+}
+
 
 
 /*------------REPEATABLE PATTERNS-------------*/
@@ -917,6 +1089,7 @@ margin: 5rem;
   /* color: #f5f5f5; */
   background: #2b2b2b;
   border: 2px solid #2b2b2b;
+  color: #f5f5f5;
 }
 
 .btn.black:hover{
@@ -925,3 +1098,24 @@ margin: 5rem;
   border: 2px solid #f5f5f5;
 }
 
+.btn.unfillBlack{
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+}
+
+.btn.unfillBlack:hover{
+  background: #2b2b2b;
+  color: #f5f5f5;
+}
+
+.btn.blackUnfill{
+  background: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  color: #f5f5f5;
+}
+
+.btn.blackUnfill:hover{
+  background: #ffa700;
+  border: 1px solid #ffa700;
+  color: #f5f5f5;
+}
