@@ -965,21 +965,6 @@ margin: 5rem;
   font-weight: 600;
 }
 
-.updates__banner .categories__wrapper{
-  display: flex;
-  line-height: 3;
-}
-
-.updates__banner .description{
-  margin-left: 10rem;
-  font-weight: 800;
-}
-
-.updates__banner .number{
-  margin-left: 10rem;
-  font-weight: 800;
-}
-
 .updates__banner table{
  margin-top: 3rem;
 }
@@ -1062,8 +1047,71 @@ margin: 5rem;
     margin-left: .5rem;
     font-weight: 600;
   }
+
+  .updates__banner .categories__title{
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .updates__banner  .recentpost__title{
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .updates__banner .wrapper__left h3, h4{
+    text-align: center;
+  }
+
+  .updates__banner .wrapper__right{
+    margin-top: 3rem;
+  }
+
+  .updates__banner .contents__categories{
+    margin-top: 2rem;
+    border-top: 2px solid #d3d3d3;
+  }
+
+  .updates__banner .td-title{
+    width:40rem;
+  }
+
+  .updates__banner .box img{
+    width: 80%;
+  }
+
+  .updates__banner .tags__title{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .updates__banner .tags a{
+    margin: 1.1rem 0;
+    text-transform: uppercase;
+  }
+
+  /* .updates__banner .details-icons p{
+    font-size: 1.1rem;
+  } */
+  
 }
 
+
+/*------------CONTACT PAGE------------*/
+
+.contactpage__banner{
+  padding-top: 13rem;
+  padding-bottom: 5rem;
+  background: #2b2b2b;
+}
+
+.contactpage__banner .contactpage__wrapper p{
+  color:#f5f5f5;
+}
+
+.contactpage__banner .container h2{
+  color:#f5f5f5;
+}
 
 
 /*------------REPEATABLE PATTERNS-------------*/
@@ -1072,6 +1120,18 @@ margin: 5rem;
   display: inline-block;
   padding: 1.5rem 2rem;
   border-radius: 5rem;
+}
+
+.btn.yellow-white{
+  background: #ffa700;
+  color: #f5f5f5;
+  border: 1px solid #ffa700;
+}
+
+.btn.yellow-white:hover{
+  background: #f5f5f5;
+  color: #2b2b2b;
+  border: 1px solid #f5f5f5;
 }
 
 .btn.yellow{
@@ -1119,3 +1179,4 @@ margin: 5rem;
   border: 1px solid #ffa700;
   color: #f5f5f5;
 }
+
