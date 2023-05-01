@@ -937,7 +937,7 @@ margin: 5rem;
   margin: 2.5rem 0;
 }
 
-.updates__banner .wrapper__left h4{
+.updates__banner .wrapper__left a{
   color: #ffa700;
   font-size: 1.6rem;
 }
@@ -956,7 +956,7 @@ margin: 5rem;
 }
 
 .updates__banner .details-icons{
-  margin-right: 8rem;
+  margin-right: 7rem;
 }
 
 .updates__banner .updates__details p{
@@ -1034,18 +1034,17 @@ margin: 5rem;
   }
 
   .updates__banner .details-icons{
-    margin-right: 1rem;
+    margin-right: 2rem;
     font-size: 1rem;
   }
 
   .updates__banner .updates__details{
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
   }
-  
+
   .updates__banner .updates__details p{
-    display: inline;
-    margin-left: .5rem;
-    font-weight: 600;
+    font-size: 0.8rem;
   }
 
   .updates__banner .categories__title{
@@ -1086,23 +1085,40 @@ margin: 5rem;
   }
 
   .updates__banner .tags a{
-    margin: 1.1rem 0;
+    margin: 1rem 0;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
   }
 
-  /* .updates__banner .details-icons p{
-    font-size: 1.1rem;
-  } */
-  
+  .updates__banner .tags p{
+    font-size: 1.2rem;
+    margin: 0 3rem;
+  }
+
+  .updates__banner .tags__buttons a{
+      justify-content: center;
+  }
 }
 
 
 /*------------CONTACT PAGE------------*/
 
 .contactpage__banner{
-  padding-top: 13rem;
+  padding-top: 15rem;
   padding-bottom: 5rem;
   background: #2b2b2b;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.contactpage__banner .contactpage__wrapper{
+  /* display: flex;
+  justify-content: space-around;
+  margin-top: 2rem; */
+
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-gap: 15rem;
 }
 
 .contactpage__banner .contactpage__wrapper p{
@@ -1110,9 +1126,114 @@ margin: 5rem;
 }
 
 .contactpage__banner .container h2{
-  color:#f5f5f5;
+  margin-bottom: 2rem;
+  color: #ffa700;
+  font-size: 5rem;
+  font-weight: 600;
 }
 
+.contactpage__banner .contactpage__details p{
+  margin-bottom: 5rem;
+}
+
+.contactpage__banner .contacts{
+  display: flex;
+}
+
+.contactpage__banner  .contactpage__details .contact__subtitle{
+  margin-bottom: 7rem;
+}
+
+.contactpage__banner .contacts p{
+  display: inline;
+}
+
+.contactpage__banner .contacts i{
+  color: #ffa700;
+  font-size: 25px;
+  margin-right: 5rem;
+}
+
+.contactpage__banner .contact__icons ul{
+display: flex;
+font-size: 25px;
+}
+
+.contactpage__banner .contact__icons ul li a{
+color: #f5f5f5;
+margin-right: 2rem;
+}
+
+.contactpage__banner .contact__icons ul li a:hover{
+color: #ffa700;
+}
+
+.contactpage__banner .contact__form input{
+ width: 100%;
+ height: 5rem;
+}
+
+::placeholder{
+padding: 2rem;
+}
+
+.contactpage__banner .contact__form #name{
+  background-color: #d9d9d9;
+  margin-bottom: 1.5rem;
+}
+
+.contactpage__banner .contact__form #email, #msg{
+  background-color: #d9d9d9;
+  margin: 1.5rem 0;
+}
+
+.contactpage__banner .contact__form .submit__btn{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.contactpage__banner .contact__form textarea{
+ width: 100%;
+}
+
+.contactpage__banner .contact__form .submit__btn{
+  margin-top: 5rem;
+}
+
+
+@media screen and (max-width: 500px){
+  
+  .contactpage__banner .contactpage__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+
+  .contactpage__banner .container{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .contactpage__banner .contact__icons ul{
+   justify-content: center;
+  }
+
+  .contactpage__banner .container h2{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .contactpage__banner  .contactpage__details .contact__subtitle{
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .contactpage__banner .contact__form .submit__btn{
+    margin-top: 3rem;
+  }
+
+}
 
 /*------------REPEATABLE PATTERNS-------------*/
 
